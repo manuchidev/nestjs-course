@@ -24,6 +24,7 @@ async function bootstrap() {
     origin: 'https://www.faztweb.com',
   });
   
-  await app.listen(process.env.PORT ?? 3000);
+  // await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
